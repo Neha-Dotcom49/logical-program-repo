@@ -20,7 +20,7 @@ charCount("Anny, My favorite fruit is Apple");
 console.log(`-------------------2. Program to Count the total number of vowels ---------------------`);
 function countVowels(str){
     var vowels = "aeiou";
-   var counter = 0;
+    var counter = 0;
 for (let index = 0; index < str.length; index++) {
     var ch = str.charAt(index);
     var chLowerCase = ch.toLowerCase();
@@ -40,18 +40,20 @@ countVowels("Do or Die");
 
 console.log(`------------------------3. Program to print total number of word count------------------------------`);
 function wordCount(str){
-    var wordCount = 0;
-    for (let i = 0; i < str.length; i++) {
-    if (str[i] == " " || i == str.length - 1) {
-        wordCount++;
-    }
-}
+    // var wordCount = 0;
+    var wordCount = str.split(' ').length;
+//     for (let i = 0; i < str.length; i++) {
+//     if (str[i] == " " || i == str.length - 1) {
+//         wordCount++;
+//     }
+// }
 console.log(`Total word count in given string ${str} is : `,wordCount);
 }
 wordCount("JavaScript The language of Internet");
 wordCount("Enhance Your Learning Journey with Exclusive Add-ons");
 wordCount("Beyond frameworks, Beyond Imagination");
 wordCount("I am passionate software developer");
+
 
 
 
